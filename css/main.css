@@ -1,0 +1,8 @@
+body {
+	background-color: pink;
+}
+@media screen and (max-width:320px) {
+	body{
+		width:100%;
+	}
+}
