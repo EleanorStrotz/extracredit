@@ -5,132 +5,8 @@ body {
 	background-color: pink;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 
-html, body {
-  background-color: #2c3e50;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
 
-.container {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-direction: column; 
-  flex-wrap: nowrap;
-  height: 100%;
-  justify-content: space-around;
-  position: relative;
-  width: 100%; 
-
-  section {
-    width: 100%;
-    height: 100vh;
-    flex: 1;
-    display: flex;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    background-color: #000;
-
-    &:nth-child(1) {
-      .image {
-        background-image: src="css/alone.jpg";
-      }
-    }
-
-    &:nth-child(2) {
-      .image {
-        background-image: url(https://unsplash.imgix.net/uploads/141310026617203b5980d/c86b8baa?q=75&fm=jpg&s=be8d1e8254844f53e56583bd49cf5e77);
-      }
-    }
-
-    &:nth-child(3) {
-      .image {
-        background-image: "css/empirestate.jpg";
-      }
-    }
-
-    &:nth-child(4) {
-      .image {
-        background-image: "css/people.jpg";
-      }
-    }
-
-    &:nth-child(5) {
-      .image {
-        background-image: "css/woods.jpg";
-      }
-    }
-
-    &:nth-child(6) {
-      .image {
-        background-image: url(https://unsplash.imgix.net/photo-1413977886085-3bbbf9a7cf6e?q=75&fm=jpg&s=26720080f9393aa6cd0d7a008a4e4280);
-      }
-    }
-
-    .image {
-      background-attachment: fixed; 
-      background-size: cover;
-      //background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 500;
-      opacity: 0.4;
-    }
-
-    .stuff {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      height: 100%;
-      width: 100%;
-      max-width: 70%;
-      justify-content: center;
-      text-align: center;
-      z-index: 1000;
-      color: #e67e22;
-      margin: 0 auto;
-      font-size: 26px;
-      position: relative;
-
-      h2 {
-        margin: 0px;
-      }
-      &:before, &:after {
-        width: 100%;
-        height: 1px;
-        display: block;
-        background-color: #d35400;
-        content: "";
-        margin: 30px 0;
-      }
-    }
-  }
-}
-
-.at-twitter {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  color: #f1c40f;
-  z-index: 5000;
-  &:visited {
-    color: #f1c40f;
-  }
-}
-
-a {
-  color: inherit;
-  &:hover,
-  &:focus {
-    color: inherit;
-    text-decoration: underline;
-  }
-  text-decoration: none;
-}
 
 
 /*media query/ mobile responsive line of code for iphone 5*/
@@ -139,10 +15,133 @@ a {
 		background-color: blue;
 	}
 }
+
+
 /* media query/ mobile responsive line of code for ipad*/
-@media (min-device-width: 768px) and (max-device-width: 1024px){
-	body{
-		background-color: yellow;
-	}
+@media (min-device-width: 768px) {
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+html, body {
+  background-color: #2c3e50;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  height: 100%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+.container section {
+  width: 100%;
+  height: 100vh;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+.container section:nth-child(1) .image {
+  background-image: url("alone.jpg");
+}
+.container section:nth-child(2) .image {
+  background-image: url(http://38.media.tumblr.com/e77ef190ff20487acedb1d664a535c1b/tumblr_n8zlzxbFUT1st5lhmo1_1280.jpg);
+}
+.container section:nth-child(3) .image {
+  background-image: url(http://38.media.tumblr.com/e6c1c887ba8e24a855351940bcd3c343/tumblr_n8zm44LBpl1st5lhmo1_1280.jpg);
+}
+.container section:nth-child(4) .image {
+  background-image: url(http://38.media.tumblr.com/4e9d8c075b15f5922682bfaa13a8125c/tumblr_n7yhezarqF1st5lhmo1_1280.jpg);
+}
+.container section:nth-child(5) .image {
+  background-image: url(http://farm2.staticflickr.com/1163/792191425_ac00528d38_o_d.jpg);
+}
+.container section:nth-child(6) .image {
+  background-image: url(http://31.media.tumblr.com/cd40dba26eabfc0901892be37f207cf6/tumblr_n7fgl3sQS61st5lhmo1_1280.jpg);
+}
+.container section .image {
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 500;
+  opacity: 0.4;
+}
+.container section .stuff {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  z-index: 1000;
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 26px;
+  position: relative;
+}
+.container section .stuff h2 {
+  margin: 0px;
+}
+.container section .stuff:before, .container section .stuff:after {
+  width: 100%;
+  height: 1px;
+  display: block;
+  content: "";
+  margin: 30px 0;
+}
+
+.at-twitter {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #f1c40f;
+  z-index: 5000;
+}
+.at-twitter:visited {
+  color: #f1c40f;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: inherit;
+  text-decoration: underline;
+}
 }
 
