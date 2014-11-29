@@ -9,6 +9,7 @@ body {
 
 
 
+
 /*media query/ mobile responsive line of code for iphone 5*/
 @media (min-device-width: 320px) and (max-device-width: 480px){
 	body{
