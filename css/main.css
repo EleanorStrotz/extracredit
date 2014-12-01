@@ -4,8 +4,12 @@ body {
 	height: 100%;
 	background-color: pink;
 }
-
-
+.title {
+  width:20% ;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
