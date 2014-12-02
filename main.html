@@ -8,56 +8,49 @@
 <body>
 
 <div class="container">
-<section>
+  <section id="home">
     <div class="image" data-type="background" data-speed="2"></div>
     <div class="stuff" data-type="content">
     <!-- nav bar code -->
- <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-        </div>
-        <div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="[[page:home]]">Home</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="[[page:]]">Title goes here </a>
-              <ul class="dropdown-menu">
-              </ul>
-            </li>
-            <li><a href="[[page:]]">Title goes here</a></li>
-            <li><a href="[[page:]]">Title goes here</a></li>
-          </ul>
-        </div>
-      </div>
+      <ul class="navbar"> 
+         <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+         <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+         <li><a href="#contact"><i class="fa fa-comment"></i> Page 1</a></li> 
+         <li><a href="#me"><i class="fa fa-pageone"></i> Page 2</a></li> 
+         <li><a href="#him"><i class="fa fa-pagetwo"></i> Page 3</a></li> 
+         <li><a href="#her"><i class="fa fa-pagethree"></i> Page 4</a></li>
+      </ul>
+
      <!-- code for the profile picture -->
-    <img class="title" src="profilepic.jpg">
-    <h1>Eleanor</h1>
-    <audio controls>
-      <source src="The xx - Intro.mp3" type="audio/mpeg">
-    </audio>
+      <img class="title" src="profilepic.jpg" />
+      <h1>Eleanor</h1>
+      <audio controls>
+        <source src="The xx - Intro.mp3" type="audio/mpeg" />
+      </audio>
     </div>
   </section>
 
-  <section>
+  <section id="about">
     <div class="image" data-type="background" data-speed="7"></div>
     <div class="stuff" data-type="content"><h2>Welcome</h2><p>welcome</p></div>
   </section>
 
-  <section>
+  <section id="contact">
     <div class="image" data-type="background" data-speed="6"></div>
     <div class="stuff" data-type="content"><h2>Hello</h2><p>welcome</p></div>
   </section>
 
-  <section>
+  <section id="me">
     <div class="image" data-type="background" data-speed="5"></div>
     <div class="stuff" data-type="content"><h2>Hello</h2><p>welcome</p></div>
   </section>
 
-  <section>
+  <section id="him">
     <div class="image" data-type="background" data-speed="3"></div>
     <div class="stuff" data-type="content"><h2>Hello</h2><p>welcome</p></div>
   </section>
 
-  <section>
+  <section id="her">
     <div class="image" data-type="background" data-speed="3"></div>
     <div class="stuff" data-type="content"><h2>Hello</h2><p>welcome</p></div>
   </section>
@@ -69,16 +62,17 @@
 </body>
 </html>
 
-<!-- <nav class="navbar navbar-default"> -->
-    <!-- <div class="container"> -->
-      <!-- <div class="navbar-header"> -->
-        <!-- <a class="navbar-brand" href="/">Angular Routing Example</a> -->
-      <!-- </div> -->
+<nav class="navbar navbar-default"> 
+     <div class="container">
+       <div class="navbar-header"> 
+         <a class="navbar-brand" href="/">Eleanor</a>
+       </div> 
 
-      <!-- <ul class="nav navbar-nav navbar-right"> -->
-        <!-- <li><a href="#"><i class="fa fa-home"></i> Home</a></li> -->
-        <!-- <li><a href="#about"><i class="fa fa-shield"></i> About</a></li> -->
-        <!-- <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li> -->
-      <!-- </ul> -->
-    <!-- </div> -->
-  <!-- </nav> -->
+       <ul class="nav navbar-nav navbar-right"> 
+         <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+         <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+         <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li> 
+         <li><a href="#me"><i class="fa fa-comment"></i> Contact</a></li> 
+       </ul>
+    </div> 
+   </nav>
